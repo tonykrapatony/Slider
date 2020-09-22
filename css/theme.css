@@ -1,0 +1,12 @@
+/*
+img {
+    filter: grayscale(1000%); 
+}*/
+
+.slick-current {
+    border: 1px solid #000;
+}
+.slick-current>img {
+    width: 109px;
+    height: 72px;
+}
