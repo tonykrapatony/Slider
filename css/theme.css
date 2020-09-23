@@ -3,10 +3,16 @@ img {
     filter: grayscale(1000%); 
 }*/
 
-.slick-current {
-    border: 1px solid #000;
+
+    
+.slick-slide>.item-img {
+    width: 56px;
+    height: 56px;
+    margin-top: 8px;
 }
-.slick-current>img {
+
+.slick-current>.item-img {
     width: 72px;
     height: 72px;
+    margin-top: 8px;
 }
