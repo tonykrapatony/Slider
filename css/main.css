@@ -1,10 +1,12 @@
 @import url(../fonts/stylesheet.css);
+@import url(./mob.css);
 
 body {
     font-family: "TT Norms Regular";
 }
 .wraper {
     width: 100%;
+    min-height: 940px;
     max-width: 1280px;
     margin: 0 auto;
     overflow: hidden;
@@ -134,22 +136,22 @@ body {
 .article {
     margin-top: 55px;
 }
-.article-tltle {
+.article-title {
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.article-tltle>h4 {
+.article-title>h4 {
     font-size: 20px;
     line-height: 28px;
     color: #14171A;
 }
-.article-tltle>img {
+.article-title>img {
     width: 24px;
     height: 24px;
 }
-.article-tltle>.silverLine {
+.article-title>.silverLine {
     width: 474px;
     height: 1px;
     background: #E8E8E9;
@@ -162,4 +164,99 @@ body {
     line-height: 26px;
     font-feature-settings: 'liga' off;
     color: #14171A;
+}
+@media screen and (max-width: 376px){
+    .wraper {
+        width: 100%;
+        overflow: hidden;
+        padding-left: 25px;
+        box-sizing: border-box;
+    }
+    .blackLine {
+	    top: 97px;
+    }
+    .slick-list {
+        width: 100%;
+    }
+    .slider-nav-item.slick-slide.slick-active {
+        margin-left: -20px;
+    }
+    .slick-slide>.item-img {
+        width: 303px;
+        height: 192px;
+        margin: 0;
+        filter: grayscale(100%); 
+    }
+    .slick-slide.slick-current>.item-img {
+        max-width: 303px;
+        width: 100%;
+        height: 192px;
+        margin: 0;
+        filter: grayscale(0%); 
+    }
+    .slick-slide>p {
+        display: none;
+        padding-left: 22px;
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+        color: #14171A;
+    }
+    .prewArrow {
+        z-index: 1;
+        top: 560px;
+        right: 116px;
+    }
+    .nextArrow {
+        z-index: 1;
+        top: 560px;
+        right: 62px;
+    }
+    .slider-for {
+        margin-top: 0px;
+    }
+    .slider-for-item>.item-title {
+        width: 100%;
+    }
+    .slider-for-item>.item-title>.text>h2 {
+        box-sizing: border-box;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 40px;
+        color: #14171A;
+    }
+    .slider-for-item>.item-title>.text>p {
+        max-width: 303px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        font-feature-settings: 'liga' off;
+        color: #14171A;
+    }
+    .slider-for-item>.item-title>img {
+        display: none;
+    }
+    .slider-for-item>.article {
+        max-width: 303px;
+	    margin-top: 0px;
+        padding-bottom: 200px;
+    }
+    .slider-for-item>.article>.article-title>h4 {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 700;
+        color: #14171A;    
+    }
+    .slider-for-item>.article>.article-title>.silverLine {
+	    max-width: 65px;
+    }
+    .slickNum {
+        top: 380px;
+        left: 5px;
+    }
+
 }

@@ -4,15 +4,6 @@ $(function() {
     
 
     
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav',
-        infinite: false,
-        focusOnSelect: true,
-    });
     $('.slider-nav').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -21,7 +12,25 @@ $(function() {
         infinite: false,
         prevArrow: '<div class="prewArrow arrows"><svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 2L3 9L10 16" stroke-width="3"/></svg></div>',
         nextArrow: '<div class="nextArrow arrows"><svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2L9 9L2 16"  stroke-width="3"/></svg></div>',
+        responsive: [
+        {
+          breakpoint: 376,
+          settings: {
+//           centerMode: true,
+           slidesToShow: 1,
+           slidesToScroll: 1
+          }
+        }]
 
+    });
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav',
+        infinite: false,
+        focusOnSelect: true,
     });
     
     $('.arrows').on('mousemove', function(){
@@ -32,4 +41,6 @@ $(function() {
         $('.arrows').css('border', '2px solid #E8E8E9');
         $('.arrows>svg>path').css('stroke', '#E8E8E9');
     })
+    
+    $('.slick-list').css('padding', '0');
 });
