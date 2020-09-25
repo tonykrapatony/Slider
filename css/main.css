@@ -121,7 +121,7 @@ body {
 }
 .text>h2 {
     margin-bottom: 15px;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 32px;
     line-height: 40px;
     color: #14171A;
@@ -145,6 +145,7 @@ body {
 .article-title>h4 {
     font-size: 20px;
     line-height: 28px;
+    font-weight: 700;
     color: #14171A;
 }
 .article-title>img {
@@ -164,6 +165,35 @@ body {
     line-height: 26px;
     font-feature-settings: 'liga' off;
     color: #14171A;
+}
+@media screen and (max-width: 767px){
+    .wraper {
+        width: 100%;
+        overflow: hidden;
+        padding-left: 25px;
+        box-sizing: border-box;
+    }
+    .item-title {
+        width: 100%;
+        padding: 0 5%;
+        box-sizing: border-box;
+    }
+    .article {
+        width: 100%;
+        padding: 0 5%;
+        box-sizing: border-box;
+        margin-top: 55px;
+    }
+    .article-title>.silverLine {
+        width: 90%;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 630px){
+    .slider-for-item>.item-title>img {
+        display: none;
+    }
+
 }
 @media screen and (max-width: 376px){
     .wraper {

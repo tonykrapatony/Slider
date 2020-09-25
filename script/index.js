@@ -14,9 +14,15 @@ $(function() {
         nextArrow: '<div class="nextArrow arrows"><svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 2L9 9L2 16"  stroke-width="3"/></svg></div>',
         responsive: [
         {
-          breakpoint: 376,
+          breakpoint: 620,
           settings: {
-//           centerMode: true,
+           slidesToShow: 2,
+           slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 539,
+          settings: {
            slidesToShow: 1,
            slidesToScroll: 1
           }
